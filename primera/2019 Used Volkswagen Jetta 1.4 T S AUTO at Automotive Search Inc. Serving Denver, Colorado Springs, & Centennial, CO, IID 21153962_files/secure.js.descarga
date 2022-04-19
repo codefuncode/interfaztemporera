@@ -1,0 +1,5 @@
+$("input[type=text], textarea").each(function(){$(this).rules('add',{ForbiddenCharacters:true,ForbiddenXmlCharacters:true,messages:{ForbiddenCharacters:"'<', '>' chars are not allowed",ForbiddenXmlCharacters:"Field contains not allowed chars"}})});jQuery.validator.addMethod("ForbiddenCharacters",function(value,element){if(value){if(value.indexOf('>')>=0||value.indexOf('<')>=0)
+return false}
+return true;},"'<', '>' chars are not allowed");jQuery.validator.addMethod("ForbiddenXmlCharacters",function(value,element){if(value){if(value.indexOf('\u0000')>=0||value.indexOf('\uffff')>=0)
+return false}
+return true;},"Field contains not allowed chars");

@@ -1,0 +1,1 @@
+new Swiper(".featured-vehicles-2",{scrollbar:{el:".swiper-scrollbar",draggable:!0},slidesPerView:"auto",centeredSlides:!1,spaceBetween:40,grabCursor:!0,breakpoints:{1600:{spaceBetween:40},1200:{spaceBetween:30},992:{spaceBetween:30},640:{spaceBetween:30},320:{spaceBetween:30}}});
